@@ -1,6 +1,6 @@
 # stock-n-shock
 
-This is a vanillaJS project to check if the user has encured profit or loss in his/her stock purchase.
+This is a vanillaJS project to check if the user has inccured profit or loss in his/her stock purchase.
 
 ## How To Use:
 
