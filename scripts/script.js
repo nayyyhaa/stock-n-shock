@@ -5,7 +5,7 @@ let submitBtn = document.querySelector('.submit-btn');
 let output = document.querySelector('.output');
 
 function validInputs(initPrice, quantity, currPrice) {
-    if(initPrice && quantity && currPrice) return true;
+    if(initPrice && quantity && currPrice && initPrice > -1 && quantity > -1 && currPrice > -1) return true;
     return false;
 }
 
@@ -37,4 +37,4 @@ function getProfitOrLoss() {
 
 //Event listeners
 
-submitBtn.addEventListener('click',getProfitOrLoss);
+submitBtn.addEventListener('click', getProfitOrLoss);
