@@ -21,9 +21,11 @@ body {
 }
 
 header {
-    min-height: 15vh;
+    min-height: 20vh;
     display: grid;
     place-items: center;
+    text-align: center;
+    padding: 0 1rem;
 }
 
 main {
@@ -37,6 +39,10 @@ main {
 input, button {
     padding: 1rem;
     font-size: 1rem;
+}
+
+input {
+    border-radius: 0.25rem;
 }
 
 label {
@@ -70,8 +76,8 @@ i {
 }
 
 .container {
-    min-height: 50vh;
-    width: 50vw;
+    min-height: 60vh;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +87,7 @@ i {
 }
 
 footer {
-    min-height: 20vh;
+    min-height: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,4 +105,16 @@ ul {
 
 ul li {
     list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    input, button {
+        padding: 0.5rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 0.5rem;
+    }
+    
 }
