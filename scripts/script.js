@@ -15,7 +15,7 @@ function calculateStock(initPrice, quantity, currPrice) {
             let change = Math.abs(initPrice - currPrice) * quantity;
             let percentageChange = parseFloat((change * 100) / initPrice).toFixed(2);
             if(initPrice < currPrice) return `WOHO! You have a profit of ${change} and percentage is ${percentageChange}%`
-            else return `Uhm! You have a loss of ${change} and percentage is ${percentageChange}%`
+            return `Uhm! You have a loss of ${change} and percentage is ${percentageChange}%`
         } else return "No profit-No gain"
     }
     return "Please enter valid Inputs!"
@@ -26,9 +26,9 @@ function displayOutput(message) {
 }
 
 function getProfitOrLoss() {
-    let initPrice = initialPrice.value;
-    let quant = quantity.value;
-    let currPrice = currentPrice.value;
+    let initPrice = Number(initialPrice.value);
+    let quant = Number(quantity.value);
+    let currPrice = Number(currentPrice.value);
 
     let message = calculateStock(initPrice, quant, currPrice);
 
